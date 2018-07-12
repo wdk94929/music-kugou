@@ -28,7 +28,7 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      '/Proxy': {
+      '/api': {
 				target: 'http://www.baidu.com',
 				changeOrigin: true,
 				pathRewrite: {

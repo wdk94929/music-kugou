@@ -2,7 +2,8 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import VueRouter from 'vue-router'
 import axios from 'axios'
-import elementUI from 'element-ui'
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-default/index.css'
 
 
 import App from './App.vue'
@@ -11,7 +12,7 @@ import App from './App.vue'
 Vue.use(Vuex)
 Vue.use(VueRouter)
 Vue.prototype.$axios = axios
-Vue.use(elementUI)
+Vue.use(ElementUI)
 
 
 new Vue({
