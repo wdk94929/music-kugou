@@ -25,15 +25,12 @@ module.exports = {
     env: require('./dev.env'),
     port: 8099,
     autoOpenBrowser: true,
-    assetsSubDirectory: 'static',
+    assetsSubDirectory: '../static',
     assetsPublicPath: '/',
     proxyTable: {
       '/api': {
 				target: 'http://www.baidu.com',
-				changeOrigin: true,
-				pathRewrite: {
-					'^/api': ''
-				}
+				changeOrigin: true
 			}
     },
     // CSS Sourcemaps off by default because relative paths are "buggy"
